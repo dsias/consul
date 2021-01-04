@@ -1,3 +1,6 @@
+<Route
+  @name={{routeName}}
+>
 <div class="tab-section">
 {{#let (hash
   statuses=(if status (split status ',') undefined)
@@ -15,7 +18,6 @@
       @search={{search}}
       @onsearch={{action (mut search) value="target.value"}}
       @searchproperties={{searchProperties}}
-
       @sort={{sort}}
       @onsort={{action (mut sortBy) value="target.selected"}}
 
@@ -54,3 +56,4 @@
   {{/let}}
 {{/let}}
 </div>
+</Route>
