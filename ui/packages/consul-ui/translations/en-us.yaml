@@ -1,1 +1,5 @@
 common:
+  brand:
+    kubernetes: Kubernetes
+    jwt: JWT
+    oidc: OIDC
